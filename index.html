@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="./common.css" rel="stylesheet">
     <title>Mobile</title>
     <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./common.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,6 +28,13 @@
             <li><a href="#">버튼</a></li>
         </ul>
     </nav>
+    <script>
+        $("#toggleGnb").hide();
+        // .은 연결하는 느낌
+        $(".toggle").on('click',function(){
+            $("#toggleGnb").slideToggle();
+        });
+    </script>
     <nav id="topGnb">
         <!-- <h2 class="hidden">버튼2</h2> -->
         <ul>
